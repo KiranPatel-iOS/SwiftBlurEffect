@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C8ABE711981383C00F593DB /* Img_SwiftBlurEffect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8ABE701981383C00F593DB /* Img_SwiftBlurEffect.png */; };
 		8B503E1D1978F6DE00897583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503E1C1978F6DE00897583 /* AppDelegate.swift */; };
 		8B503E1F1978F6DE00897583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503E1E1978F6DE00897583 /* ViewController.swift */; };
 		8B503E221978F6DE00897583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B503E201978F6DE00897583 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C8ABE701981383C00F593DB /* Img_SwiftBlurEffect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Img_SwiftBlurEffect.png; sourceTree = "<group>"; };
 		8B503E171978F6DE00897583 /* SwiftBlurEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBlurEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B503E1B1978F6DE00897583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B503E1C1978F6DE00897583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,12 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C8ABE6F1981383C00F593DB /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				7C8ABE701981383C00F593DB /* Img_SwiftBlurEffect.png */,
+			);
+			path = ScreenShots;
+			sourceTree = "<group>";
+		};
 		8B503E0E1978F6DE00897583 = {
 			isa = PBXGroup;
 			children = (
 				8B503E191978F6DE00897583 /* SwiftBlurEffect */,
 				8B503E2C1978F6DE00897583 /* SwiftBlurEffectTests */,
 				8B503E181978F6DE00897583 /* Products */,
+				7C8ABE6F1981383C00F593DB /* ScreenShots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8ABE711981383C00F593DB /* Img_SwiftBlurEffect.png in Resources */,
 				8B503E221978F6DE00897583 /* Main.storyboard in Resources */,
 				8B503E241978F6DE00897583 /* Images.xcassets in Resources */,
 			);
@@ -397,6 +409,7 @@
 				8B503E351978F6DE00897583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B503E361978F6DE00897583 /* Build configuration list for PBXNativeTarget "SwiftBlurEffectTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +418,7 @@
 				8B503E381978F6DE00897583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
