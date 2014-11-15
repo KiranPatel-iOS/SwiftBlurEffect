@@ -23,22 +23,22 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate{
 
         //Set Extra Light Blur View
         blurEffectExtraLight = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
-        blurViewExtraLight = UIVisualEffectView(effect: blurEffectExtraLight)
+        blurViewExtraLight = UIVisualEffectView(effect: blurEffectExtraLight!)
         blurViewExtraLight!.frame = CGRectMake(10, 70, 300, 100)
-        view.addSubview(blurViewExtraLight)
+        view.addSubview(blurViewExtraLight!)
         
         
         //Set Light Blur View
         blurEffectLight = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        blurViewLight = UIVisualEffectView(effect: blurEffectLight)
+        blurViewLight = UIVisualEffectView(effect: blurEffectLight!)
         blurViewLight!.frame = CGRectMake(10, 220, 300, 100)
-        view.addSubview(blurViewLight)
+        view.addSubview(blurViewLight!)
 
         //Set Dark Blur View
         blurEffectDark = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-        blurViewDark = UIVisualEffectView(effect: blurEffectDark)
+        blurViewDark = UIVisualEffectView(effect: blurEffectDark!)
         blurViewDark!.frame = CGRectMake(10, 370, 300, 100)
-        view.addSubview(blurViewDark)
+        view.addSubview(blurViewDark!)
         
         //Adding Pan gesture on all blur view
         addPanGesture(blurViewExtraLight!)
@@ -64,14 +64,14 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate{
         var panGesture : UIPanGestureRecognizer?
         panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
         panGesture!.delegate = self
-        blurViewToAdd.addGestureRecognizer(panGesture)
+        blurViewToAdd.addGestureRecognizer(panGesture!)
     }
     //Function : Pan Gesture Handler
     func handlePan(recognizer:UIPanGestureRecognizer) {
-        view.bringSubviewToFront(recognizer.view)
+        view.bringSubviewToFront(recognizer.view!)
         let translation = recognizer.translationInView(self.view)
-        recognizer.view.center = CGPoint(x:recognizer.view.center.x + translation.x,
-            y:recognizer.view.center.y + translation.y)
+        recognizer.view!.center = CGPoint(x:recognizer.view!.center.x + translation.x,
+            y:recognizer.view!.center.y + translation.y)
         recognizer.setTranslation(CGPointZero, inView: self.view)
     }
     
